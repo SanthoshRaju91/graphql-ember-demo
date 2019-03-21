@@ -1,0 +1,9 @@
+query tickets {
+    tickets {
+        id
+        problem
+        problemDescription
+        emailAddress
+        contactNumber
+    }
+}
