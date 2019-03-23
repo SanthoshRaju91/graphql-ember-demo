@@ -1,12 +1,15 @@
 import Route from '@ember/routing/route';
-import { RouteQueryManager } from 'ember-apollo-client';
-import query from 'client/gql/queries/ticket.graphql';
 
-export default Route.extend(RouteQueryManager, {
-    async model() {        
-        const data = await this.get('apollo').query({
-            query: query
-        });                
-        return data.tickets;
+export default Route.extend({
+    beforeModel() {
+        this.replaceWith('list')
+    },
+    actions: {
+        navigate() {
+            this.transitionTo('create');
+        },
+        home() {
+            this.transitionTo('list');
+        }
     }
 });

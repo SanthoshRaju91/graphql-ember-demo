@@ -1,6 +1,10 @@
-<h2>Service tickets</h2>
+<div class="app-container">
+    <div class="header">
+        <h2 {{action "home"}}>Service tickets</h2>
 
-{{#each this.model as |row|}}
-    <h2>{{row.problem}}</h2>
-{{/each}}
-{{outlet}}
+        <div class="new-section">
+            <button {{action "navigate"}}>New Ticket</button>
+        </div>
+    </div>
+    {{outlet}}
+</div>

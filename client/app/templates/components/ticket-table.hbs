@@ -1,0 +1,38 @@
+<div class="tickets-table">
+    <div class="table-row-header">
+        <div class="table-head id">
+            ID
+        </div>
+        <div class="table-head">
+            Problem
+        </div>
+        <div class="table-head">
+            Problem Description
+        </div>
+        <div class="table-head">
+            Email Address
+        </div>
+        <div class="table-head">
+            Contact Number
+        </div>
+    </div>
+    {{#each this.data as |row|}}
+    <div class="table-row">
+        <div class="table-row-section">
+            {{row.id}}
+        </div>
+        <div class="table-row-section">
+            {{row.problem}}
+        </div>
+        <div class="table-row-section">
+            {{row.problemDescription}}
+        </div>
+        <div class="table-row-section">
+            {{row.emailAddress}}
+        </div>
+        <div class="table-row-section">
+            {{row.contactNumber}}
+        </div>
+    </div>
+    {{/each}}
+</div>

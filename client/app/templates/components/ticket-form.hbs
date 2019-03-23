@@ -1,0 +1,22 @@
+<div class="form">
+    <div class="section">
+        <label>Problem</label>
+        {{input class="input" type="text" value=(mut this.problem)}}
+    </div>
+    <div class="section">
+        <label>Problem Description</label>
+        {{textarea class="input" value=(mut this.desc) rows="5" cols="50" }}
+    </div>
+    <div class="section">
+        <label>Email Address</label>
+        {{input class="input" type="email" value=(mut this.email)}}
+    </div>
+    <div class="section">
+        <label>Contact</label>
+        {{input class="input" type="text" value=(mut this.contact)}}
+    </div>
+
+    <div class="section">
+        <button class="create-btn" {{action "create"}}>Create Ticket</button>
+    </div>
+</div>

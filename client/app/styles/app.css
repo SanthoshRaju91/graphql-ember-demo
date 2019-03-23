@@ -1,0 +1,114 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #e6edf1;
+}
+
+.app-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.app-container .header h2 {
+    width: 80%;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: 1.5px;
+}
+
+.app-container .header .new-section {
+    display: inline-block;
+}
+
+.new-section button {
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #405dcf;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1);
+    transition: transform .3s ease;
+}
+
+.new-section button:hover {
+    transform: scale(1.05);
+}
+
+.tickets-table {
+    margin-top: 80px;
+}
+
+.tickets-table .table-row-header {
+    background: #263238;
+    padding: 15px 0;
+    border-radius: 2px;
+}
+
+.tickets-table .table-row-header .table-head {
+    display: inline-block;
+    padding: 5px 20px;
+    width: 15%;    
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.tickets-table .table-row .table-row-section {
+    display: inline-block;
+    padding: 20px;
+    width: 15%;        
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+
+.create-container {
+    margin-top: 50px;
+}
+
+.create-container h2 {
+    width: 30%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #bdc3c7;
+}
+
+.create-container .form .section {
+    padding: 20px 10px;
+}
+
+.create-container .form .section label {
+    width: 20%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.create-container .form .section .input {
+    padding: 10px;    
+    width: 50%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+
+.create-container .form .section .create-btn {
+    margin-top: 30px;
+    width: 200px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #405dcf;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1);
+    transition: transform .3s ease;
+}
+
+.create-container .form .section .create-btn:hover {
+    transform: scale(1.05);
+}
